@@ -202,7 +202,7 @@
               <form class="work-request" action="https://formspree.io/amsavarthan.a@gmail.com" method="POST">
                 <div class="work-request--options">
                   <span class="options-a">
-                    <input id="opt-1" name="message" type="checkbox" value="android app">
+                    <input id="opt-1" type="checkbox" value="android app" onclick="addMessage1">
                     <label for="opt-1">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -213,7 +213,7 @@
                       Android App
                     </label>
                 
-               <input id="opt-2" name="message" type="checkbox" value="ui/ux design">
+               <input id="opt-2" type="checkbox" value="ui/ux design" onclick="addMessage2">
                     <label for="opt-2">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -224,7 +224,7 @@
                       UI/UX design
                     </label>
                       
-                      <input id="opt-3" name="message" type="checkbox" value="webdesign">
+                      <input id="opt-3" type="checkbox" value="webdesign" onclick="addMessage3">
                     <label for="opt-3">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -252,6 +252,11 @@
                     <label for="email">Email</label>
                   </div>
                 
+                    <div class="information-message" style="display:none">
+                    <input id="message" name="message" type="text" spellcheck="false">
+                    <label for="message">Message</label>
+                  </div>
+                    
                 </div>
                   
                 <input id="submit" name="submit" type="submit" value="Send Request">
