@@ -251,37 +251,7 @@ $( document ).ready(function() {
 
     });
 
-  }
-
-function addMessage1() {
-
-    var checkBox = document.getElementById("opt-1");
-  var message = document.getElementById("message");
-
-  if (checkBox.checked == true){
-    message.value += "Android App,";
-  } 
-} 
-    
-    function addMessage2() {
-
-    var checkBox = document.getElementById("opt-2");
-  var message = document.getElementById("message");
-
-  if (checkBox.checked == true){
-    message.value += "Web Design,";
-  } 
-} 
-    
-    function addMessage3() {
-
-    var checkBox = document.getElementById("opt-3");
-  var message = document.getElementById("message");
-
-  if (checkBox.checked == true){
-    message.value += "UI/UX Design,";
-  } 
-} 
+  
     
   function transitionLabels() {
 

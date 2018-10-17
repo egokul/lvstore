@@ -199,10 +199,10 @@
             <div class="hire">
               <h2>You want us to do</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request" action="https://formspree.io/amsavarthan.a@gmail.com" method="POST">
+              <form class="work-request" action="https://formspree.io/amsavarthan.a@gmail.com" onsubmit="validate()" method="POST">
                 <div class="work-request--options">
                   <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="android app" onclick="addMessage1">
+                    <input id="opt-1" type="checkbox" value="android app">
                     <label for="opt-1">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -213,7 +213,7 @@
                       Android App
                     </label>
                 
-               <input id="opt-2" type="checkbox" value="ui/ux design" onclick="addMessage2">
+               <input id="opt-2" type="checkbox" value="ui/ux design">
                     <label for="opt-2">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -224,7 +224,7 @@
                       UI/UX design
                     </label>
                       
-                      <input id="opt-3" type="checkbox" value="webdesign" onclick="addMessage3">
+                      <input id="opt-3" type="checkbox" value="webdesign">
                     <label for="opt-3">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -252,15 +252,42 @@
                     <label for="email">Email</label>
                   </div>
                 
-                    <div class="information-message" style="display:none">
+                    <div class="information-email" style="display: none">
                     <input id="message" name="message" type="text" spellcheck="false">
-                    <label for="message">Message</label>
                   </div>
                     
                 </div>
                   
                 <input id="submit" name="submit" type="submit" value="Send Request">
               </form>
+                <script type="application/javascript">
+                
+                    function validate() {
+                     
+                        var checkBox1 = document.getElementById("opt-1");
+                        var checkBox2 = document.getElementById("opt-2");
+                        var checkBox3 = document.getElementById("opt-3");
+                        var message = document.getElementById("message");
+
+                        
+                            if (checkBox1.checked == true){
+                                message.value += "Android App,";
+                            } 
+                        
+                            if (checkBox3.checked == true){
+                                message.value += "Web design,";
+                            } 
+                        
+                            if (checkBox2.checked == true){
+                                message.value += "UI/UX design,";
+                            }
+                            
+                        
+                                    
+                        
+                    }
+                    
+                </script>
             </div>
           </li>
         </ul>
