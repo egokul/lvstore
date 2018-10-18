@@ -275,11 +275,6 @@ $( document ).ready(function() {
 
   outerNav();
   workSlider();
-  workSlider();
-  workSlider();
-  workSlider();
-  workSlider();
-
   transitionLabels();
 
 });
